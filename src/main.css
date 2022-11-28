@@ -1,0 +1,14 @@
+.showNetworkEnabled {
+    font-weight: bold;
+}
+
+.resultBlock {
+  background-color: mintcream;
+  padding: 20px;
+  border: 1px dashed lightgray;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: 1px dashed lightgray;
+}
