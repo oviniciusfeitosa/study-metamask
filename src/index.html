@@ -4,7 +4,7 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Page Title</title>
+  <title>Study - Metamask</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 
@@ -23,19 +23,26 @@
         <div class="block">
           <div class="block mt-6 leading-tight font-medium text-black">Ethereum Network</div>
           <p class="mt-2 text-slate-500">Metamask installed? <span
-              class="showNetworkEnabled text-indigo-500 font-semibold"></span>
+              class="ml-2 showNetworkEnabled text-indigo-500 font-semibold"></span>
           </p>
         </div>
         <hr class="block mt-6 mb-6" />
         <div class="block">
-          <div class=" leading-tight font-medium text-black">Enable / Disable</div>
-          <div class=" mt-2">
+          <div class=" leading-tight font-medium text-black">Connect to Metamask</div>
+          <div class=" mt-2 ">
             <button id="connectEthereumNetwork"
               class="px-4 py-2 font-semibold text-sm bg-cyan-500 text-white rounded-full shadow-sm disconected">Connect</button>
-            <button
-              class="px-4 py-2 font-semibold text-sm bg-red-500 hover:bg-red-200 text-white rounded-full shadow-sm  connected">Disconnect</button>
+
+            <div class="inline">
+              <button class="px-4 py-2 font-semibold text-sm bg-green-400 text-white rounded-full shadow-sm  connected">
+                Connected
+                <!-- class="fill-blue-500" -->
+              </button>
+
+            </div>
             <p class="mt-2 text-slate-500 connected">Account: <span class="showAccount"></span></p>
           </div>
+
         </div>
         <hr class="block mt-6 mb-6" />
         <div class="block">
