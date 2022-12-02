@@ -53,7 +53,7 @@ personalSign.onclick = async () => {
     personalSignVerify.disabled = false;
   } catch (err) {
     console.error(err);
-    personalSign.innerHTML = `Error: ${err.message}`;
+    personalSignResult.innerHTML = `Error: ${err.message}`;
   }
 };
 

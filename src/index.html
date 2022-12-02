@@ -11,39 +11,71 @@
 </head>
 
 <body>
-  <div>
-    <h1>Ethereum Network</h1>
-    <h3></h3>
-    <div>
-      Metamask installed <span class="showNetworkEnabled"></span>
-    </div>
-  </div>
-  <hr />
-  <div id="connectBox">
-    <h1>Enable / Disable</h1>
-    <div>
-      <button id="connectEthereumNetwork" class="disconected">Connect</button>
-      <button class="connected">Disconnect</button>
-      <h2 class="connected">Account: <span class="showAccount"></span></h2>
-    </div>
-  </div>
-  <hr />
-  <div>
-    <h1>Sign contract</h1>
-    <div>
-      <div>
-        <button id="personalSign" class="connected">Sign</button>
-        <h3>Result</h3>
-        <section id="personalSignResult" class="resultBlock"></section>
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-4xl p-8">
+    <div class="md:flex">
+      <div class="">
+        <img class="max-w-none" src="metamask.svg" alt="Modern building architecture">
       </div>
-      <div>
-        <button id="personalSignVerify" class="connected">Verify</button>
-        <h3>Result</h3>
-        <section id="personalSignVerifySigUtilResult" class="resultBlock"></section>
+      <div class="mx-auto p-8">
+        <div class="block">
+          <divp class="uppercase tracking-wide text-lg text-indigo-500 font-semibold">Metamask</divp>
+        </div>
+        <div class="block">
+          <div class="block mt-6 leading-tight font-medium text-black">Ethereum Network</div>
+          <p class="mt-2 text-slate-500">Metamask installed? <span
+              class="showNetworkEnabled text-indigo-500 font-semibold"></span>
+          </p>
+        </div>
+        <hr class="block mt-6 mb-6" />
+        <div class="block">
+          <div class=" leading-tight font-medium text-black">Enable / Disable</div>
+          <div class=" mt-2">
+            <button id="connectEthereumNetwork"
+              class="px-4 py-2 font-semibold text-sm bg-cyan-500 text-white rounded-full shadow-sm disconected">Connect</button>
+            <button
+              class="px-4 py-2 font-semibold text-sm bg-red-500 hover:bg-red-200 text-white rounded-full shadow-sm  connected">Disconnect</button>
+            <p class="mt-2 text-slate-500 connected">Account: <span class="showAccount"></span></p>
+          </div>
+        </div>
+        <hr class="block mt-6 mb-6" />
+        <div class="block">
+          <div class="leading-tight font-medium text-black">Sign contract</div>
+          <div class="mt-2">
+            <div class="mt-2">
+              <button id="personalSign"
+                class="px-4 py-2 font-semibold text-sm bg-cyan-500 hover:bg-cyan-200 text-white rounded-full shadow-sm connected">Sign</button>
+              <p class="mt-2 text-slate-500 connected">Result: </p>
+              <section id="personalSignResult" class="bg-green-100 p-4"></section>
+            </div>
+          </div>
+        </div>
+        <div class="block  mt-6 mb-6">
+          <div class="leading-tight font-medium text-black">Check the signed contract</div>
+          <div class="mt-2">
+            <div class="mt-2">
+              <button id="personalSignVerify"
+                class="px-4 py-2 font-semibold text-sm bg-yellow-500 hover:bg-yellow-200 text-white rounded-full shadow-sm connected">Check</button>
+              <p class="mt-2 text-slate-500 connected">Result: </p>
+              <section id="personalSignVerifySigUtilResult" class="bg-green-100 p-4"></section>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <script src='bundle.js'></script>
+
+    <script src='bundle.js'></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
 </body>
 
 </html>
