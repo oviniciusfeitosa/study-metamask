@@ -2,6 +2,14 @@
 
 Study on interactions and experiences on Web3 using Metamask.
 
+## Commands
+
+- `yarn start`
+- `yarn build`
+- `yarn setup`
+- `yarn deploy`
+- `yarn test`
+- `yarn prepublishOnly`
 
 ## References
 
